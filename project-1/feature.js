@@ -11,8 +11,11 @@ let num1 = 20 , num2 = 30
     console.log(`Multiplication : ${num1 * num2}`)
     console.log(`Division : ${num1 / num2}`)
 
-
 console.log(` `);
+
+
+
+
 
 // Swapping Program
 console.log(`Swapping Program`);
@@ -28,22 +31,27 @@ console.log(` `);
     num_2 = temp;
 
 console.log(`The numbers after swap: ${num_1}, ${num_2}`)
-
-
 console.log(` `);
+
+
+
 
 // Grade Calculation (Direct Formula Style)
 console.log(`Grade Calculation (Direct Formula Style)`);
 console.log(` `);
 
-let grade = "A" , name="palak" , marks=88;
+let grade = 'A' , name="palak" , marks=88;
 
 console.log(`Name of student : ${name}`);
 console.log(`Grade of student : ${grade}`);
 console.log(`Marks of student : ${marks}`);
 
-
 console.log(` `);
+
+
+
+
+
 
 // Bill Calculation 
 console.log(` Bill Calculation `);
@@ -61,6 +69,11 @@ console.log(`Discount applied : ${discount}%`);
 console.log(`The Net amount: ${net_Amount}`);
 
 console.log(` `);
+
+
+
+
+
 
 // Simple Interest
 
@@ -83,6 +96,11 @@ console.log(`The time(year) : ${T}`);
 console.log(`The Simple interest : ${S_interest}`);
 
 console.log(` `);
+
+
+
+
+
 
 // Employee Salary Calculation
 
