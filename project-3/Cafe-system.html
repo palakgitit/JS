@@ -25,7 +25,7 @@
             4. Pastry (₹100) <br>
             5. View Bill <br>
             6. Change Password <br>
-            7. Check highest & lowest <br>
+            7. Check Cafe report <br>
             0. Exit
         </p>
 
@@ -161,13 +161,15 @@
 
                 }
                 else if (choice === 7) {
-
+                    avg=total /totalItems;
                     document.getElementById("output").innerHTML += `<b>The highest : ${highest}. </b><br>`;
-                    document.getElementById("output").innerHTML += `<b>The Lowest : ${lowest}.</b><br><hr>`;
+                    document.getElementById("output").innerHTML += `<b>The Lowest : ${lowest}.</b><br>`;
+                    document.getElementById("output").innerHTML += `<b>The Average : ${avg}.</b><br><hr>`;
 
                     console.log(` `);
                     console.log(`The highest : ${highest}. `);
                     console.log(`The Lowest : ${lowest}. `);
+                    console.log(`The Average : ${avg}. `);
 
                 }
                 else if (choice === 0) {
