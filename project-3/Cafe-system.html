@@ -9,31 +9,31 @@
 
 <body>
     <style>
-        input{
-            
+        input {
+
             border-color: rgb(48, 40, 35);
             padding: 5px;
             outline: 0px;
         }
     </style>
-   <form action="" id="form">
-     <h2> Welcome to PI Cafe</h2>
-    <p>
-        1. Coffee (₹50) <br>
-        2. Tea (₹30) <br>
-        3. Sandwich (₹80) <br>
-        4. Pastry (₹100) <br>
-        5. View Bill <br>
-        6. Change Password <br>
-        7. Check highest & lowest <br>
-        0. Exit
-    </p>
+    <form action="" id="form">
+        <h2> Welcome to PI Cafe</h2>
+        <p>
+            1. Coffee (₹50) <br>
+            2. Tea (₹30) <br>
+            3. Sandwich (₹80) <br>
+            4. Pastry (₹100) <br>
+            5. View Bill <br>
+            6. Change Password <br>
+            7. Check highest & lowest <br>
+            0. Exit
+        </p>
 
-    <label>Enter your choice: </label>
-    <input type="number" id="choice">
-    <button id="enterBtn">Enter</button>
-    <hr>
-   </form>
+        <label>Enter your choice: </label>
+        <input type="number" id="choice">
+        <button id="enterBtn">Enter</button>
+        <hr>
+    </form>
     <p id="output"></p>
 
     <script>
@@ -47,18 +47,18 @@
         let saved_pw = "12345";
 
 
-        
-    document.getElementById("form").onsubmit = function(e) {
-      e.preventDefault();  
-        
-    let choice =Number(document.getElementById("choice").value);
+
+        document.getElementById("form").onsubmit = function (e) {
+            e.preventDefault();
+
+            let choice = Number(document.getElementById("choice").value);
 
             do {
                 if (choice === 1) {
                     total = total + 50;
                     totalItems = totalItems + 1;
                     document.getElementById("output").innerHTML += "You ordered Coffee - ₹50<br>";
-
+                    console.log(`You ordered Coffee - ₹50`);
                     if (50 > highest) {
                         highest = 50;
                     }
@@ -70,6 +70,7 @@
                     total = total + 30;
                     totalItems = totalItems + 1;
                     document.getElementById("output").innerHTML += "You ordered Tea - ₹30<br>";
+                    console.log(`You ordered Tea - ₹30`);
                     if (30 > highest) {
                         highest = 30;
                     }
@@ -81,6 +82,7 @@
                     total = total + 80;
                     totalItems = totalItems + 1;
                     document.getElementById("output").innerHTML += "You ordered Sandwich - ₹80<br>";
+                    console.log(`You ordered Sandwich - ₹80`);
 
                     if (80 > highest) {
                         highest = 80;
@@ -93,6 +95,7 @@
                     total = total + 100;
                     totalItems = totalItems + 1;
                     document.getElementById("output").innerHTML += "You ordered Pastry - ₹100<br>";
+                    console.log(`You ordered Pastry - ₹100`);
 
                     if (100 > highest) {
                         highest = 100;
@@ -123,6 +126,14 @@
                     document.getElementById("output").innerHTML += `GST (5%): ₹${gst}<br>`;
                     document.getElementById("output").innerHTML += `Discount: ₹${discount.toFixed(2)}<br>`;
                     document.getElementById("output").innerHTML += `<b>Grand Total: ₹${Final_amount}</b><br><hr>`;
+
+                    console.log(` `);
+                    console.log(`Bill Summary: `);
+                    console.log(`Total Items: ${totalItems}.`);
+                    console.log(`Subtotal: ₹${total}.`);
+                    console.log(`GST (5%): ₹${gst}.`);
+                    console.log(`Discount: ₹${discount.toFixed(2)}.`);
+                    console.log(`Grand Total: ₹${Final_amount}`);
                 }
                 else if (choice === 6) {
 
@@ -133,24 +144,38 @@
                         if (oldPassword == NewPassword) {
 
                             document.getElementById("output").innerHTML += "The Old & New password is <b>'matched'.</b> Consider using Diffrent Password. <br><br><hr>";
+                            console.log(` `);
+                            console.log(`The Old & New password is <b>'matched'.</b> Consider using Diffrent Password.  `);
+
                         } else {
 
                             saved_pw = NewPassword;
                             document.getElementById("output").innerHTML += "<b>The password is Changed...! <b><br> <hr>";
+                            console.log(` `);
+                            console.log(`The password is Changed...! `);
+
                         };
                     } else {
                         alert("The old password is incorrect...!");
                     };
 
-                } 
+                }
                 else if (choice === 7) {
 
                     document.getElementById("output").innerHTML += `<b>The highest : ${highest}. </b><br>`;
                     document.getElementById("output").innerHTML += `<b>The Lowest : ${lowest}.</b><br><hr>`;
 
+                    console.log(` `);
+                    console.log(`The highest : ${highest}. `);
+                    console.log(`The Lowest : ${lowest}. `);
+
                 }
                 else if (choice === 0) {
-                    document.getElementById("output").innerHTML += "<b>Thank you for visiting PI Cafe.</b><br>";
+                    document.getElementById("output").innerHTML += "<h2><b>Thank you for visiting PI Cafe.</b></h2><br>";
+
+                    console.log(` `);
+                    console.log(`Thank you for visiting PI Cafe.`);
+
                     break;
                 }
                 else {
@@ -165,7 +190,7 @@
             document.getElementById("choice").value = "";
         };
 
-    
+
     </script>
 </body>
 
