@@ -1,7 +1,4 @@
-![password](<Screenshot 2025-10-08 104443.png>) ![password](<Screenshot 2025-10-08 104425.png>) ![password](<Screenshot 2025-10-08 104437.png>)
-
-![fitness](<Screenshot 2025-10-08 104406.png>) ![fitness](<Screenshot 2025-10-08 104352.png>) ![fitness](<Screenshot 2025-10-08 104358.png>)
-
-![Data-gb](<Screenshot 2025-10-08 104308.png>) ![Data-gb](<Screenshot 2025-10-08 104315.png>) ![Data-gb](<Screenshot 2025-10-08 104323.png>)
-
-![Budget](<Screenshot 2025-10-08 104240.png>) ![Budget](<Screenshot 2025-10-08 104212.png>) ![Budget](<Screenshot 2025-10-08 104228.png>)
+![budget](budget-1.png) ![budget ](budget-2.png) ![budget](budget-3.png)
+![data](GB-3.png) ![data](GB-1.png) ![data](GB-2.png)
+![fitness](fitness-3.png) ![fitness](fitness-1.png) ![fitness](fitness-2.png)
+![password](Password-3.png) ![password](Password-1.png) ![password](Password-2.png)
