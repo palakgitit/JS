@@ -1,7 +1,7 @@
+<h2 style="color: darkblue;">HTML Output</h2>
 
-<h2 style="color=dark-blue;"> The Html Output: </h2>
-![html](html-view-1.png)
+![HTML View](html-view-1.png)
 
+<h2 style="color: darkblue;">Console Output</h2>
 
-<h2 style="color=dark-blue;"> The console Output: </h2>
-![alt text](console-view.png)
+![Console View](console-view.png)
