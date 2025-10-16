@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arithmetic Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 30px;
+      color: #333;
+    }
+
+    h2 {
+      
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 6px 0;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Arithmetic Calculator Result</h2>
+  <div id="result"></div>
+
+  <script>
+    // Get user inputs
+    let firstNum = parseFloat(prompt("Enter first number:"));
+    let secondNum = parseFloat(prompt("Enter second number:"));
+    let op = prompt("Enter operator (+, -, *, /, %):");
+
+    console.log("First number entered:", firstNum);
+    console.log("Second number entered:", secondNum);
+    console.log("Operator entered:", op);
+
+    // Arithmetic calculation function
+    function calculate(firstNum, secondNum, op) {
+      let result;
+      switch (op) {
+        case '+':
+          result = firstNum + secondNum;
+          break;
+        case '-':
+          result = firstNum - secondNum;
+          break;
+        case '*':
+          result = firstNum * secondNum;
+          break;
+        case '/':
+          result = secondNum !== 0 ? firstNum / secondNum : "Cannot divide by zero";
+          break;
+        case '%':
+          result = secondNum !== 0 ? firstNum % secondNum : "Cannot modulo by zero";
+          break;
+        default:
+          result = "Invalid operator!";
+      }
+      console.log("Calculation result:", result);
+      return result;
+    }
+
+    let result = calculate(firstNum, secondNum, op);
+
+    // Display results on page
+    let display = `
+      <p>First Number: <span>${firstNum}</span></p>
+      <p>Second Number: <span>${secondNum}</span></p>
+      <p>Operator: <span>${op}</span></p>
+      <p>Result: <span>${result}</span></p>
+    `;
+
+    document.getElementById("result").innerHTML = display;
+
+    console.log("Displayed on page: First number =", firstNum, ", Second number =", secondNum, ", Operator =", op, ", Result =", result);
+  </script>
+</body>
+
+</html>

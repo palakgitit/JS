@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square & Cube Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      color: #333;
+    }
+
+    input, button {
+      font-size: 16px;
+      padding: 6px 10px;
+      margin: 5px 0;
+    }
+
+    #result {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Square & Cube Calculator</h2>
+
+  <label>Enter a number:</label><br>
+  <input type="number" id="numInput" placeholder="e.g. 5"><br>
+  <button onclick="calculate()">Calculate</button>
+
+  <div id="result"></div>
+
+  <script>
+    function findSquare(n) {
+      return n * n;
+    }
+
+    function findCube(n) {
+      return n * n * n;
+    }
+
+    function calculate() {
+      let number = parseFloat(document.getElementById("numInput").value);
+
+      if (isNaN(number)) {
+        document.getElementById("result").innerHTML = "Please enter a valid number.";
+        console.log("Invalid input:", number);
+        return;
+      }
+
+      const square = findSquare(number);
+      const cube = findCube(number);
+
+      document.getElementById("result").innerHTML =
+        `Number: ${number} <br> Square: ${square} <br> Cube: ${cube}`;
+
+      console.log(`Entered number: ${number}`);
+      console.log(`Square: ${square}`);
+      console.log(`Cube: ${cube}`);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Travel Planner</title>
+</head>
+
+<body>
+    <style>
+        h2 {
+            color: rgb(9, 52, 123);
+        }
+
+        button {
+
+            padding: 5px;
+            font-size: 15px;
+            background-color: transparent;
+            border-width: 2px;
+            border-style: dashed;
+
+        }
+    </style>
+
+    <h2><i><u>Smart Travel Planner</u></i></h2>
+
+
+    <label>Destinations:</label><br>
+    <input type="text" id="dest" placeholder="e.g. Goa, Manali"><br><br>
+
+    <label>Total Budget (₹):</label><br>
+    <input type="number" id="budget" placeholder="e.g. 12000"><br><br>
+
+    <label>Number of Days:</label><br>
+    <input type="number" id="days" placeholder="e.g. 5"><br><br>
+
+    <button id="btn">Plan Trip</button>
+
+    <script>
+        document.getElementById("btn").onclick = () => {
+
+            let destValue = document.getElementById("dest").value;
+            let destList = destValue.split(",").map(x => x.trim());
+            let totalBudget = Number(document.getElementById("budget").value);
+            let totalDays = Number(document.getElementById("days").value);
+
+            console.clear();
+            console.log("SMART TRAVEL PLANNER RESULT:");
+            console.log(" ");
+
+            console.log("Destinations Entered:", destList);
+            console.log("Total destinations:", destList.length);
+            console.log("Total Budget: ₹" + totalBudget.toLocaleString());
+
+
+            if (totalBudget < 100000) {
+                console.log("Summary: Plan a short domestic trip.");
+
+            } else if (totalBudget <= 250000) {
+                console.log("Summary: You can plan a long domestic trip.");
+
+            } else {
+                console.log("Summary: International trip possible!");
+
+            }
+            console.log("Days Planned:", totalDays);
+            if (totalDays <= 3) {
+                console.log("Trip Type: Weekend Getaway");
+
+            } else if (totalDays <= 7) {
+                console.log("Trip Type: Perfect Holiday Trip");
+
+            } else {
+                console.log("Trip Type: Extended Vacation");
+
+            }
+            function hotelType(budget, days) {
+                let perDay = budget / days;
+                if (perDay < 20000) {
+                    return "Budget Hotels";
+
+                }
+                else if (perDay <= 50000) {
+                    return "Mid-range Hotels";
+                }
+                else {
+                    return "Luxury Hotels";
+                }
+            }
+
+            let hotel = hotelType(totalBudget, totalDays);
+            console.log("Hotel Suggestion:", hotel);
+
+            console.log(" ");
+            console.log(" Travel Summary:");
+            console.log(" ");
+
+            console.log("You are visiting:", destList, (", "));
+            console.log("Trip Duration:", totalDays + " days");
+            console.log("Budget Planned: ₹" + totalBudget.toLocaleString());
+            console.log("Hotel Type:", hotel);
+            console.log("Safe journey & happy travel...!");
+        };
+    </script>
+
+</body>
+
+</html>
