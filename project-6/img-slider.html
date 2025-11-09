@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="./File/img-slider.css">
+</head>
+
+<body>
+
+  <h2>Image Slider</h2>
+
+  <div class="slider">
+    <img id="imageBox" alt="slide">
+
+    <div class="buttons">
+      <button id="prev">←</button>
+      <button id="next">→</button>
+    </div>
+  </div>
+
+  <script>
+    const photos = [
+      "File/img/css-img-1.jpg",
+      "File/img/css-img-2.jpg",
+      "File/img/css-img-3.jpg",
+      "File/img/css-img-6.jpg",
+      "File/img/css-img-5.jpg",
+      "File/img/css-img-4.jpg",
+      "File/img/css-img-7.jpg"
+      
+    ];
+
+    let current = 0;
+    const imageBox = document.getElementById("imageBox");
+    const next = document.getElementById("next");
+    const prev = document.getElementById("prev");
+
+    imageBox.src = photos[current];
+
+    prev.addEventListener("click", () => {
+      current--;
+      if (current < 0) {
+        current = photos.length - 1;
+      }
+      imageBox.src = photos[current];
+    });
+
+    next.addEventListener("click", () => {
+      current++;
+      if (current >= photos.length) {
+        current = 0;
+      }
+      imageBox.src = photos[current];
+    });
+  </script>
+
+</body>
+</html>
