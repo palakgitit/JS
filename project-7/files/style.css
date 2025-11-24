@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+form h2{
+
+    text-decoration: underline solid  4px rgb(255, 255, 51);
+}
+form{
+    width: 450px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.376);
+
+}
+label{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input,textarea,select {
+    outline: 0px;
+    border: 0px;
+    padding: 5px;
+    border: 1px black solid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-wrap: wrap;
+}
+
+textarea{
+    resize: none;
+}
+button{
+    background-color: black;
+    color: white;
+    border: 0px;
+    padding: 10px;
+    transition: all ease-in 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+
+#taskDisplay{
+    border: 1px solid black ;
+    padding: 5px;
+    width: 500px;
+    align-items: center;
+    padding: 6px 10px;
+    margin: 5px 0;
+    background: #fff;
+    border-left: 4px solid #020304;
+    border-radius: 4px;
+    font-size: 14px;
+    
+}
+
+#taskDisplay button {
+    margin-left: 10px;
+}
+
+
+
