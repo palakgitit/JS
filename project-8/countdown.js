@@ -1,3 +1,13 @@
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+
+setTimeout(() => {
+    document.getElementById("popup").style.display = "flex";
+}, 500);
+
 let counterstartNUM = null;
 let paused = true;
 
@@ -44,3 +54,29 @@ function resetBTN() {
     counterstartNUM = null;
     document.getElementById("circle").innerHTML = " ";
 }
+
+// quote slider
+
+let quote= [
+
+    "Be positive , Be strong. ",
+    "You'll learn, as you get older, that rules are made to be broken.",
+    "Life itself is the most wonderful fairytale.",
+    "Happiness depends upon ourselves.",
+    "Everything you can imagine is real."
+]
+
+let index = 0;
+
+function showQuote() {
+    document.getElementById("quoteBox").innerText = quote[index];
+    index++;
+
+    if (index >= quote.length) {
+        index = 0;  
+    }
+}
+
+
+setInterval(showQuote, 3000);
+showQuote();
