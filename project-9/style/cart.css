@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter;
+    margin: 0px;
+}
+
+.salesMsgbox {
+
+    background-color: #EDE1D0;
+    color: #777168;
+    font-size: 16px;
+    text-align: center;
+}
+
+.salesMsgbox p {
+    padding: 9px;
+    margin: 0px;
+}
+
+ul,
+li {
+
+    list-style: none;
+}
+/*  Nav-bar */
+
+.nav-bar nav{
+    padding: 22px;
+}
+
+.nav-bar .navlink {
+    font-weight: 600;
+    color: black;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-bar .navlink:hover  {
+    display: block;
+    
+}
+
+.navBar-logo img {
+    width: 180px;
+    height: 50px;
+    display: inline-block;
+}
