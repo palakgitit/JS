@@ -4,6 +4,11 @@
     margin: 0px;
 }
 
+::selection{
+
+    background-color: rgb(255, 248, 237);
+}
+
 .salesMsgbox {
 
     background-color: #EDE1D0;
@@ -15,6 +20,10 @@
 .salesMsgbox p {
     padding: 9px;
     margin: 0px;
+}
+a{
+    color: inherit !important;
+    text-decoration: none !important ;
 }
 
 ul,
@@ -45,3 +54,19 @@ li {
     height: 50px;
     display: inline-block;
 }
+
+.addProduct-heading {
+
+    margin-top: 60px;
+}
+
+.addProduct-heading span{
+
+    display: inline-block;
+    margin: 5px ;
+}
+.addProduct-heading  h2{
+
+    margin-bottom: 60px;
+}
+
