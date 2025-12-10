@@ -1,3 +1,17 @@
+textarea {
+    width: 100%;
+    height: 45.61px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    resize:none;
+    transition: 0.2s;
+}
+
+
 .addProduct-section {
     display: flex;
     justify-content: center;

@@ -1,15 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
 
-<script src="./js/cart.js"></script>
+<link rel="stylesheet" href="./style/cart.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <section class="nav-bar" id="navbar">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+    
+                <!-- LEFT MENU -->
+                <div class="collapse navbar-collapse" id="leftMenu">
+                    <div class="navbar-nav gap-3">
+                        <a class="nav-link fs-5 " href="#">Home</a>
+                        <a class="nav-link fs-5" href="#">Shop</a>
+                        <a class="nav-link fs-5" href="#">Product</a>
+                        <a class="nav-link fs-5" href="#">Page</a>
+                        <a class="nav-link fs-5" href="#">Blog</a>
+                    </div>
+                </div>
+    
+                <!-- CENTER LOGO -->
+                <div class="text-center mx-auto navBar-logo">
+                    <a href="index.html">
+                        <img src="./img/navBar/logo.png" alt="logo-OfCompany">
+                    </a>
+    
+                </div>
+    
+                <!-- RIGHT ICONS -->
+                <div class="collapse navbar-collapse justify-content-end" id="rightMenu">
+                    <ul class="navbar-nav d-flex gap-4 align-items-center ">
+                        <li class="nav-item fs-5"><a href="addProduct.html">+ Add</a></li>
+                        <li class="nav-item fs-5"><i class="bi bi-search"></i></li>
+                        <li class="nav-item fs-5"><i class="bi bi-person"></i></li>
+                        <li class="nav-item fs-5"><i class="bi bi-star"></i></li>
+                        <li class="nav-item fs-5"><a href="viewCart.html"><i class="bi bi-bag-check"></i></a></li>
+                    </ul>
+                </div>
+    
+            </div>
+        </nav>
+    </section>
+
+    <!-- Product Detail Section -->
+    <div class="container mt-5">
+        <div class="row">
+
+           
+            <div id="productDetail"></div>
+
+        </div>
+    </div>
+
+    <script src="./js/cart.js"></script>
+
+    
+    <script>
+        
+        const params = new URLSearchParams(window.location.search);
+        const pid = params.get("id");
+
+        if (pid) {
+            viewDetail(pid);
+        }
+    </script>
+
 </body>
 
 </html>
