@@ -20,7 +20,7 @@ This project is designed for learning CRUD operations and improving UI skills.
 
 ## 🖼 Screenshots
 
-> Replace the image paths with your own
+
 
 ### 📌 Homepage – Featured Products
 ![Homepage]![alt text](<Screenshot 2025-12-10 104043.png>)
@@ -48,6 +48,4 @@ This project is designed for learning CRUD operations and improving UI skills.
 | JavaScript | Functionality |
 | LocalStorage | Data persistence |
 
----
 
-## 📂 Project Structure
