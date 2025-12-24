@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    font-family: Inter;
+    margin: 0px;
+}
+
+.py-50{
+    padding: 50px;
+}
+:root{
+    --primary-text:#C96442;
+}
+
+.chapter-banner{
+        background-image: url("../img/banner.jpg");
+        background-position: bottom ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 150px;
+}
+
+.banner {
+    min-height: 500px;
+    position: relative;
+    background-image: url("../img/banner.jpg") ;
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    z-index: -1;
+}
+
+.banner::before{
+    content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.2),
+                rgba(13, 13, 13, 0.3),
+                rgba(13, 13, 13, 0.3),
+                rgba(255, 255, 255, 0.6),
+                rgba(255, 255, 255, 1),
+                rgba(255, 255, 255, 1));
+        z-index: 0;
+}
+
+.banner-text{
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    font-weight: 600;
+    position: relative;
+    z-index: 4;
+}
+
+/* .banner-text .btn{
+
+    background-color: red !important;
+} */
+
+.banner-text h1{
+    font-size: 65px ;
+}
+
+.slokbox-section .card{
+    width: 100%;
+    padding: 20px;
+}
+
+.card-text {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card .card-title{
+    font-weight: 600;
+    color: var(--primary-text);
+}
+
+.chapter-section .card-title{
+
+    font-weight: 500;
+}
+
+.chapter-section .btn:hover , .navigation .btn:hover , .slokbox-section .btn:hover  {
+
+    background-color: transparent !important;
+    border: #C96442 solid 1px !important ;
+    color: #C96442 !important ;
+    cursor: pointer !important;
+
+}   
+.chapter-section .card-text{
+
+    text-align: justify !important;
+    
+}
+
+.chapter-section .card:hover {
+
+    border: #C96442 1px solid;
+ 
+}
