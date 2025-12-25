@@ -17,8 +17,8 @@
 
 
 <h3>
-        ## Technologies Used
-       </h3>
+        # Technologies Used
+</h3>
         - HTML
         - CSS
         - JavaScript
@@ -29,7 +29,7 @@
 <h3>
             ## Folder Structure
         </h3>
-<ol>
+<ul>
 <li> - index.html</li>
  <li> - chapter.html</li>           
 <li><b>  - css/ </b></li>       
@@ -40,8 +40,8 @@
    <li> <b> - js/ </b></li>         
    <li> -files </li>         
     
-   <li> <b>  </b></li>         
-            - assets/
+   <li> <b> - assets/ </b></li>         
+            
            
    <li>   -css</li>           
    <li>   -fonts</li>          
@@ -53,7 +53,7 @@
 <li> -file</li>          
 <li> - screenshot</li>         
         </p>
-</ol>   
+</ul>   
 
 <h2>
             ## Screenshots
