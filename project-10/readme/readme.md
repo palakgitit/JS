@@ -29,31 +29,31 @@
 <h3>
             ## Folder Structure
         </h3>
-        <p>
-            - index.html
-            - chapter.html
-            - verse.html
-            <b> 
-            - css/
-            </b>
-                 - files
-            <b>
-            - js/</b>
-                -files
-            <b>
-            - assets/
-            </b>
-                -css
-                -fonts
-                -img
-                -Js
-            <b>
-            -readme/
-            </b>
-                -file
-                - screenshot
-        </p>
+<ol>
+<li> - index.html</li>
+ <li> - chapter.html</li>           
+<li><b>  - css/ </b></li>       
+           
+           
+ <li>  - files</li>               
             
+   <li> <b> - js/ </b></li>         
+   <li> -files </li>         
+    
+   <li> <b>  </b></li>         
+            - assets/
+           
+   <li>   -css</li>           
+   <li>   -fonts</li>          
+    <li>   -img</li>          
+    <li>   -Js</li>          
+        
+<li><b>-readme/  </b></li>      
+           
+<li> -file</li>          
+<li> - screenshot</li>         
+        </p>
+</ol>   
 
 <h2>
             ## Screenshots
