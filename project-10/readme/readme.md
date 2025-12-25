@@ -19,40 +19,42 @@
 <h3>
         # Technologies Used
 </h3>
-        - HTML
-        - CSS
-        - JavaScript
-        - Bootstrap
-        - Bhagavad Gita API (vedicscriptures.github.io)
+
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- Bhagavad Gita API (vedicscriptures.github.io)
 
 
 <h3>
             ## Folder Structure
         </h3>
 <ul>
-<li> - index.html</li>
- <li> - chapter.html</li>           
-<li><b>  - css/ </b></li>       
+<li>  index.html</li>
+ <li> chapter.html</li>           
+<li><b>   css/ </b></li>       
            
            
- <li>  - files</li>               
+ <li>   files</li>               
             
-   <li> <b> - js/ </b></li>         
-   <li> -files </li>         
+   <li> <b>  js/ </b></li>         
+   <li> files </li>         
     
-   <li> <b> - assets/ </b></li>         
+   <li> <b> assets/ </b></li>         
             
            
-   <li>   -css</li>           
-   <li>   -fonts</li>          
-    <li>   -img</li>          
-    <li>   -Js</li>          
+   <li>   css</li>           
+   <li>   fonts</li>          
+    <li>   img</li>          
+    <li>   Js</li>          
         
-<li><b>-readme/  </b></li>      
+<li><b>readme/  </b></li>      
            
-<li> -file</li>          
-<li> - screenshot</li>         
-        </p>
+<li> file</li>          
+<li>  screenshot</li>         
+        
 </ul>   
 
 <h2>
