@@ -34,26 +34,22 @@
 <ul>
 <li>  index.html</li>
  <li> chapter.html</li>           
-<li><b>   css/ </b></li>       
-           
-           
- <li>   files</li>               
+<li><b>   css/ </b></li>          
+ -files            
             
    <li> <b>  js/ </b></li>         
-   <li> files </li>         
+  -files       
     
    <li> <b> assets/ </b></li>         
             
-           
-   <li>   css</li>           
-   <li>   fonts</li>          
-    <li>   img</li>          
-    <li>   Js</li>          
+ -css
+ -fonts
+ -img          
+ -js
         
 <li><b>readme/  </b></li>      
-           
-<li> file</li>          
-<li>  screenshot</li>         
+    -files
+    -screenshot     
         
 </ul>   
 
