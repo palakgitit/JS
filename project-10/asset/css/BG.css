@@ -1,17 +1,54 @@
-*{
+*
+{
     box-sizing: border-box;
     font-family: Inter;
     margin: 0px;
 }
 
-.py-50{
+.py-50
+{
     padding: 50px;
 }
-:root{
+:root
+{
     --primary-text:#C96442;
+    --background: #F5F0EA;
 }
 
-.chapter-banner{
+.background
+{
+    background-color: var(--background);
+}
+.text-justify
+{
+
+    text-align: justify !important;
+}
+.text-grey
+{
+
+    color: #5C5650;
+    font-weight: 600;
+}
+.primary-text
+{
+    font-weight: 600;
+    color: var(--primary-text) !important;
+}
+
+.italic
+{
+
+    font-style: italic;
+}
+
+.letter-spacing
+{
+
+    letter-spacing: 2px;
+}
+.chapter-banner
+{
         background-image: url("../img/banner.jpg");
         background-position: bottom ;
         background-size: cover;
@@ -19,7 +56,8 @@
         min-height: 150px;
 }
 
-.banner {
+.banner 
+{
     min-height: 500px;
     position: relative;
     background-image: url("../img/banner.jpg") ;
@@ -29,7 +67,8 @@
     z-index: -1;
 }
 
-.banner::before{
+.banner::before
+{
     content: "";
         position: absolute;
         inset: 0;
@@ -44,7 +83,8 @@
         z-index: 0;
 }
 
-.banner-text{
+.banner-text
+{
     width: 100%;
     text-align: center;
     justify-items: center;
@@ -58,47 +98,74 @@
     background-color: red !important;
 } */
 
-.banner-text h1{
+.banner-text h1
+{
     font-size: 65px ;
 }
 
-.slokbox-section .card{
+.slokbox-section .card
+{
     width: 100%;
     padding: 20px;
 }
 
-.card-text {
+.card-text 
+{
     width: 500px;
     text-align: center;
     margin: 0 auto;
 }
 
-.card .card-title{
+.card .card-title
+{
     font-weight: 600;
     color: var(--primary-text);
 }
 
-.chapter-section .card-title{
-
+.chapter-section .card-title
+{
     font-weight: 500;
 }
 
-.chapter-section .btn:hover , .navigation .btn:hover , .slokbox-section .btn:hover  {
-
+.chapter-section .btn:hover , .navigation .btn:hover , .slokbox-section .btn:hover 
+{
     background-color: transparent !important;
     border: #C96442 solid 1px !important ;
     color: #C96442 !important ;
     cursor: pointer !important;
 
 }   
-.chapter-section .card-text{
+.chapter-section .card-text
+{
 
     text-align: justify !important;
     
 }
+.chapter-section .card
+{
+    transition: all ease-in 0.4s;
+}
+.chapter-section .card:hover
+{
+    background-color: transparent !important;
+        border: #C96442 solid 1px !important;
+        box-shadow: 5px 5px 10px rgba(194, 194, 194, 0.749);
 
-.chapter-section .card:hover {
+}
+.verseContent
+{
 
-    border: #C96442 1px solid;
- 
+    padding: 35px !important;
+    justify-items: center;
+    border-top: 1px solid rgb(255, 238, 238);
+    transition: all 0.2s ease-out;
+}
+
+.verseContent:hover 
+{
+
+    padding: 10px;
+    justify-items: center !important;
+    background-color: #F7F1EB;
+    border-top: 1px solid transparent;
 }

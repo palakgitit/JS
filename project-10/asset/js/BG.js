@@ -1,3 +1,5 @@
+console.log("JS loaded!!");
+
 // shlok loop
 let shlok = [
 
@@ -33,13 +35,13 @@ async function fetchChapters() {
     data.forEach(ch => {
         chapter += `
             <div class="col-4">
-                <div class="card h-100">
+                <div class="card h-100" onclick=chapterNew(${ch.chapter_number})>
                     <div class="card-body">
                         <h5 class="card-title">Chapter:${ch.chapter_number}</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">${ch.transliteration}</h6>
                         <p class="card-text w-100 mb-3 ">
                         ${ch.summary.en.slice(0, 70)}...</p>
-                        <a href="./chapter.html" class="btn btn-primary card-link">Read Chapter</a>
+                        <a href="#" class="btn btn-primary card-link">Read Chapter</a>
                         
                     </div>
             </div>
@@ -49,37 +51,17 @@ async function fetchChapters() {
     });
 
     document.getElementById("chapters").innerHTML = chapter;
+   
 }
 
 fetchChapters();
 
-function chapterNew(chapterNO){
+
+
+function chapterNew(chapterNO) {
 
     window.location.href = `chapter.html?number=${chapterNO}`;
 }
-if (document.getElementById("summary-detail")){
 
-    const params = new URLSearchParams(window.location.search);
-    const chapterNO = params.get("number");
 
-    fetch(`https://vedicscriptures.github.io/chapter/${chapterNO}`)
-        .then(response => response.json())
-        .then(data => {
 
-            document.getElementById("summary-detail").innerHTML= `
-
-            <div >
-                <div class="summaryBox-title">
-                    Chapter ${data.chapter_number}
-                </div>
-                <h6 class="card-subtitle mb-2 text-body-secondary">${ch.transliteration}</h6>
-                        <p class="card-text w-100 mb-3 ">
-                        ${ch.summary.hi.slice(0, 70)}...</p>
-                       
-            
-            </div>
-            
-            `
-        });
-
-}

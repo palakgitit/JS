@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -16,39 +16,39 @@
         <section class="navigation">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-
+        
                     <!-- Logo -->
                     <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                         <img class="nav-logo" src="./asset/img/bhagavad-gita.webp" alt="logo">
                         Bhagwatgita
                     </a>
-
+        
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+        
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+        
                         <!-- Middle menu -->
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="#">Chapters</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Quotes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./allChapter.html">All Chapters</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sloks</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">About Gita</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Gita AI</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Donate</a></li>
                         </ul>
-
+        
                         <!-- Right icons & button -->
                         <div class="d-flex align-items-center gap-4">
                             <i class="bi bi-search"></i>
                             <i class="bi bi-moon"></i>
-
+        
                             <a href="#" class="btn btn-primary">
                                 <i class="bi bi-person-fill"></i> sign-in
                             </a>
                         </div>
-
+        
                     </div>
                 </div>
             </nav>
@@ -59,11 +59,8 @@
         <section class="chapter-banner  position-relative">
             <div class="container-fluid p-0 ">
                 <div class="position-relative"></div>
-                <nav aria-label="breadcrumb" class="position-absolute top-50 start-50 translate-middle w-100">
-                    <ol class="breadcrumb justify-content-center fs-4">
-                        <li class="breadcrumb-item "><a href="./index.html" class="text-white">Home</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">Chapters</li>
-                    </ol>
+                <nav aria-label="breadcrumb"  id="bread"class="position-absolute top-50 start-50 translate-middle w-100">
+                   
                 </nav>
             </div>
 
@@ -76,7 +73,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div id="summary-detail" class="d-flex gap-3 ">
+                        <div id="summary-detail" class=" gap-3 " ></div>
+                        <div class="m1 verseBox mt-5" id="verseBox">
                             
                         </div>
                     </div>
@@ -90,10 +88,9 @@
     </footer>
 
 
-
-
+    
     <script src="./asset/js/bootstrap.bundle.min.js"></script>
-    <script src="./asset/js/BG.js"></script>
+    <script src="./asset/js/chapter.js"></script>
 </body>
 
-</html>
+</html> 

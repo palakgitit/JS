@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,27 @@
     <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="./asset/css/bootstrap-icons.css">
 </head>
-<body>  
+
+<body>
 
     <head>
         <section class="navigation">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-        
+
                     <!-- Logo -->
                     <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                         <img class="nav-logo" src="./asset/img/bhagavad-gita.webp" alt="logo">
                         Bhagwatgita
                     </a>
-        
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-        
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
+
                         <!-- Middle menu -->
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="./allChapter.html">All Chapters</a></li>
@@ -36,17 +38,17 @@
                             <li class="nav-item"><a class="nav-link" href="#">Gita AI</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Donate</a></li>
                         </ul>
-        
+
                         <!-- Right icons & button -->
                         <div class="d-flex align-items-center gap-4">
                             <i class="bi bi-search"></i>
                             <i class="bi bi-moon"></i>
-        
+
                             <a href="#" class="btn btn-primary">
                                 <i class="bi bi-person-fill"></i> sign-in
                             </a>
                         </div>
-        
+
                     </div>
                 </div>
             </nav>
@@ -54,63 +56,14 @@
 
     </head>
     <main>
-        <section class="banner">
-            <div class="position-relative"></div>
-            <div class="container-fluid p-0 ">
-               
-                <div class="banner-text position-absolute top-50 start-50 translate-middle text-white justify-content-center">
-                    <h1 class="mb-3 ">
-                        Bhagavad Gita in <br>
-                        Hindi & English with Audio
-                    </h1>
-                    <p class="mb-3">
-                        Read, study, and practice the eternal wisdom of Lord Krishna's Bhagavad Gita
-                    </p>
-
-                    <div class="banner-buttons d-flex gap-3">
-                        <a href="#" class="btn btn-primary ">
-                            <span>Read now</span>
-                            <i class="bi bi-arrow-right-short"></i>
-                        </a>
-                        <a href="#" class="btn  bg-white">
-                            Learn more
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </section>
-
        
-        <section class="slokbox-section ">
-                <div class="container">
-                    <div class="row ">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body text-center ">
-                                    <h5 class="card-title mb-4 fs-4 primary-text">Shloka of the Day - BG 9.19</h5>
-                                    <p class="card-text mb-4 fs-6" id="shlokbox"> 
 
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Explore Daily Verse
-                                        <i class="bi bi-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <div class="py-50"></div>
+        <section class="verse-section">
+            <div class="container">
+                <div class="row g-4" id="verseSlok">
 
-        <section class="chapter-section">
-                <div class="container">
-                    <div class="row g-4"  id="chapters">
-                       
-                    </div>
                 </div>
+            </div>
         </section>
         <section class="subscribe-section"></section>
         <section class="explore-section"></section>
@@ -124,8 +77,10 @@
 
 
 
-        <script src="./asset/js/bootstrap.bundle.min.js"></script>
-        <script src="./asset/js/BG.js"></script>
-       
+    <script src="./asset/js/bootstrap.bundle.min.js"></script>
+    <script src="./asset/js/BG.js"></script>
+    <script src="./asset/js/chapter.js"></script>
+    <script src="./asset/js/verse.js"></script>
 </body>
+
 </html>
