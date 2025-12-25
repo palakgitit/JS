@@ -61,7 +61,7 @@ if (container) {
                 // Add html from js to Chapter.html
                         verseBox.innerHTML += `
 
-                          <div class="d-flex verseContent gap-5 "  onclick="GetVerseNo(${verse.verse})">
+                          <div class="d-flex verseContent gap-5 "  onclick="GetVerseNo(${verse.chapter},${verse.verse})">
                                 <div class="verseNo primary-text fs-5 ">
                                     Verse:${verse.verse}
                                 </div>
@@ -74,11 +74,10 @@ if (container) {
 
         }
 
-
-function GetVerseNo(VerseNo) {
-
-    window.location.href = `verse.html?number=${VerseNo}`;
+function GetVerseNo(ChapterNo, VerseNo) {
+    window.location.href = `verse.html?chapter=${ChapterNo}&verse=${VerseNo}`;
 }
+
 
 
 

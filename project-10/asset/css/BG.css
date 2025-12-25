@@ -4,11 +4,15 @@
     font-family: Inter;
     margin: 0px;
 }
+::selection{
+    background-color: #514f4432;
+}
 
 .py-50
 {
     padding: 50px;
 }
+
 :root
 {
     --primary-text:#C96442;
@@ -28,11 +32,11 @@
 {
 
     color: #5C5650;
-    font-weight: 600;
+    font-weight: 500;
 }
 .primary-text
 {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-text) !important;
 }
 
@@ -46,6 +50,12 @@
 {
 
     letter-spacing: 2px;
+}
+
+.navigation .nav-logo
+{
+    width: 30px;
+    height: 35px;
 }
 .chapter-banner
 {
@@ -89,14 +99,25 @@
     text-align: center;
     justify-items: center;
     font-weight: 600;
-    position: relative;
-    z-index: 4;
+    position: absolute;
+    z-index: 5;
 }
 
-/* .banner-text .btn{
+.banner-buttons a{
 
-    background-color: red !important;
-} */
+    width: 200px;
+    height: 50px;
+    border: 1px solid transparent;
+    align-content: center;
+    transition: all ease-in-out 0.4s;
+}
+
+.banner-buttons a:hover
+{
+    border: 1px solid var(--primary-text);
+    color: white;
+}
+
 
 .banner-text h1
 {
@@ -127,7 +148,10 @@
     font-weight: 500;
 }
 
-.chapter-section .btn:hover , .navigation .btn:hover , .slokbox-section .btn:hover 
+.chapter-section .btn:hover , 
+.navigation .btn:hover , 
+.slokbox-section .btn:hover ,
+.form-body .btn:hover
 {
     background-color: transparent !important;
     border: #C96442 solid 1px !important ;
@@ -169,3 +193,93 @@
     background-color: #F7F1EB;
     border-top: 1px solid transparent;
 }
+
+#verseSlok  .card{
+
+    border: 0px solid transparent !important;
+}
+
+.form-section form{
+
+    margin-top: 70px;
+    padding-left: 40px;
+}
+
+.form-body input
+{
+
+    width: 100%;
+    margin-bottom: 30px;
+    outline: none;
+    padding: 10px;
+}
+
+.form-body .btn
+{
+
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form-section .row
+{
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    padding: 0px;
+}
+.form-section .col-7, .col-4
+{
+    padding: 0px;
+}
+.gita-poster 
+{
+    height: 100%;
+    border-radius: 30px;
+}
+
+.img-text
+{
+    padding: 20px;
+    bottom: 10px;
+    transform: translateX(100px);
+    width: auto;
+    height: auto;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 30px;
+ 
+
+}
+
+.accordion-item{
+
+    margin-bottom:10px;
+    outline: transparent 1px solid;
+}
+
+.accordion-item .accordion-button{
+
+    padding: 30px !important;
+    background-color: rgb(255, 255, 255) !important;
+    transition: all 0.2s ease-in-out;
+  
+   
+}
+
+.accordion-item .accordion-button:hover 
+{
+    background-color: #F8F7F4 !important;
+}
+
+.accordion-button:focus,
+.accordion-button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-item  .accordion-collapse .accordion-button:hover {
+
+    background-color: #F8F7F4 !important;
+}
+
