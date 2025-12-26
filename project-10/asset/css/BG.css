@@ -103,19 +103,22 @@
     z-index: 5;
 }
 
-.banner-buttons a{
-
+.banner-text .btn-banner
+{
     width: 200px;
     height: 50px;
-    border: 1px solid transparent;
+    background-color: #C96442   !important;
+    color: white;
+    border: 1px solid transparent !important;
     align-content: center;
     transition: all ease-in-out 0.4s;
 }
 
-.banner-buttons a:hover
+ .banner-text .btn-banner:hover
 {
-    border: 1px solid var(--primary-text);
-    color: white;
+    border: 1px solid var(--primary-text) !important;
+    color: #C96442 !important;
+    background-color: transparent;
 }
 
 
@@ -283,3 +286,61 @@
     background-color: #F8F7F4 !important;
 }
 
+
+.footer {
+    background-color: transparent;
+    color: #54525297;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: rgb(64, 64, 64);
+    font-weight: 500;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #54525297;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.end-section img
+{
+    width: 140px;
+    height: 40px;
+    right: 0px;
+
+}
