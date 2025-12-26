@@ -114,12 +114,6 @@
     transition: all ease-in-out 0.4s;
 }
 
- .banner-text .btn-banner:hover
-{
-    border: 1px solid var(--primary-text) !important;
-    color: #C96442 !important;
-    background-color: transparent;
-}
 
 
 .banner-text h1
