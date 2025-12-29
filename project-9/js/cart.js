@@ -103,11 +103,6 @@ function viewDetail(id) {
     document.getElementById("productDetail").innerHTML = box;
 }
 
-
-
-
-
-
 function addCart(id) {
 
     let allProducts = JSON.parse(localStorage.getItem("products")) || [];
